@@ -9,8 +9,16 @@ interface DashboardHeaderProps {
 
 export function DashboardHeader({ user, onSignOut }: DashboardHeaderProps) {
     const handleSignOut = async () => {
+        // Auth0 logout URL'ini oluştur
+        const auth0LogoutUrl = new URL(`${process.env.NEXT_PUBLIC_AUTH0_ISSUER || 'https://dev-bpo5xzuig5zm2sxb.us.auth0.com'}/v2/logout`);
+        auth0LogoutUrl.searchParams.set('client_id', process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID || 'N3n9kPCACU8VzNd816vdBi6gUdXScizW');
+        auth0LogoutUrl.searchParams.set('returnTo', window.location.origin);
+
+        // NextAuth session'ını temizle
         await signOut({ redirect: false });
-        onSignOut();
+
+        // Auth0 session'ını da temizlemek için Auth0 logout sayfasına yönlendir
+        window.location.href = auth0LogoutUrl.toString();
     };
 
     return (
