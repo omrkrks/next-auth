@@ -51,13 +51,13 @@ npm install
 
 \`\`\`env
 # Auth0 Configuration
-AUTH0_CLIENT_ID=your_auth0_client_id
-AUTH0_CLIENT_SECRET=your_auth0_client_secret
-AUTH0_ISSUER=https://your-domain.auth0.com
+AUTH0_CLIENT_ID=N3n9kPCACU8VzNd816vdBi6gUdXScizW
+AUTH0_CLIENT_SECRET=6tFPCn-20SBbV-2AdcTiSZmj7fpeWpUbH71aQnrObgce6ZyHp_g8WQhp9tE_0HHt
+AUTH0_ISSUER=https://dev-bpo5xzuig5zm2sxb.us.auth0.com
 
 # NextAuth Configuration
 NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-secret-key-here
+NEXTAUTH_SECRET=ajskdhfmasdbgmasdmgasdöfmnasdmgnmsdngmönasdmögnmasdngmöasngmönasdmgö
 
 # Environment
 NODE_ENV=development
