@@ -241,7 +241,7 @@ LOG_LEVEL=debug
 ## 📞 İletişim
 
 Sorularınız için:
-- GitHub Issues: [Proje Issues](https://github.com/your-username/next-auth-project/issues)
+- GitHub Issues: [Proje Issues](https://github.com/omrkrks/next-auth-project/issues)
 - Email: omerkarakas090@gmail.com
 
 
