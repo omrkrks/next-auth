@@ -77,7 +77,7 @@ Auth0 Rules bölümünde yeni bir kural oluşturun:
 
 \`\`\`javascript
 function (user, context, callback) {
-  const namespace = 'https://myapp.com/';
+  const namespace = 'https://omerkarakas.com/';
   const assignedRoles = (context.authorization || {}).roles;
   
   let idTokenClaims = context.idToken || {};

@@ -8,7 +8,7 @@ interface Auth0Profile {
     name: string;
     email: string;
     picture: string;
-    "https://myapp.com/roles"?: string[];
+    "https://omerkarakas.com/roles"?: string[];
 }
 
 const authOptions: NextAuthOptions = {
@@ -44,7 +44,7 @@ const authOptions: NextAuthOptions = {
             if (account?.provider === "auth0" && profile) {
                 // Auth0'da custom claim'ler namespace ile gelir
                 const auth0Profile = profile as Auth0Profile;
-                const roles = auth0Profile["https://myapp.com/roles"] || [];
+                const roles = auth0Profile["https://omerkarakas.com/roles"] || [];
                 user.roles = roles;
             }
             return true;
