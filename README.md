@@ -242,7 +242,7 @@ LOG_LEVEL=debug
 
 Sorularınız için:
 - GitHub Issues: [Proje Issues](https://github.com/your-username/next-auth-project/issues)
-- Email: your-email@example.com
+- Email: omerkarakas090@gmail.com
 
 
 //
