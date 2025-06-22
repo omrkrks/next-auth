@@ -51,13 +51,13 @@ npm install
 
 \`\`\`env
 # Auth0 Configuration
-AUTH0_CLIENT_ID=your_auth0_client_id
-AUTH0_CLIENT_SECRET=your_auth0_client_secret
-AUTH0_ISSUER=https://your-domain.auth0.com
+AUTH0_CLIENT_ID=N3n9kPCACU8VzNd816vdBi6gUdXScizW
+AUTH0_CLIENT_SECRET=6tFPCn-20SBbV-2AdcTiSZmj7fpeWpUbH71aQnrObgce6ZyHp_g8WQhp9tE_0HHt
+AUTH0_ISSUER=https://dev-bpo5xzuig5zm2sxb.us.auth0.com
 
 # NextAuth Configuration
 NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-secret-key-here
+NEXTAUTH_SECRET=ajskdhfmasdbgmasdmgasdöfmnasdmgnmsdngmönasdmögnmasdngmöasngmönasdmgö
 
 # Environment
 NODE_ENV=development
@@ -77,7 +77,7 @@ Auth0 Rules bölümünde yeni bir kural oluşturun:
 
 \`\`\`javascript
 function (user, context, callback) {
-  const namespace = 'https://myapp.com/';
+  const namespace = 'https://omerkarakas.com/';
   const assignedRoles = (context.authorization || {}).roles;
   
   let idTokenClaims = context.idToken || {};
@@ -241,8 +241,8 @@ LOG_LEVEL=debug
 ## 📞 İletişim
 
 Sorularınız için:
-- GitHub Issues: [Proje Issues](https://github.com/your-username/next-auth-project/issues)
-- Email: your-email@example.com
+- GitHub Issues: [Proje Issues](https://github.com/omrkrks/next-auth-project/issues)
+- Email: omerkarakas090@gmail.com
 
 
 //
